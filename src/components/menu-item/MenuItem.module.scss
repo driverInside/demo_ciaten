@@ -1,0 +1,55 @@
+.menuItem {
+    display: grid;
+    align-items: center;
+    height: 50px;
+    grid-template-columns: minmax(50px, 25%) 1fr;
+
+    background-color: azure;
+    border: solid 1px #999;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    .icon {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 0.75em;
+
+        padding: 0 10%;
+    }
+}
+
+.menuItem:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .menuItem {
+        .icon {
+            text-align: center;
+        }
+    
+        .title {
+            font-size: 0.75em;
+    
+            padding: 0 10%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menuItem {
+        .icon {
+            font-size: 1.2em;
+        }
+
+        .title {
+            font-size: 1em;
+    
+            padding: 0 10%;
+        }
+    }
+}
